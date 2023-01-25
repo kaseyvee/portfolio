@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.Header {
+  margin: 3rem;
+  width: fit-content;
+
+  h1 {
+    font-family: $primary-font;
+    color: $white;
+    font-size: 6rem;
+    margin: 0;
+  }
+  
+  h2 {
+    font-family: $secondary-font;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $orange;
+    margin: 0;
+    letter-spacing: 1rem;
+  }
+
+  .links {
+    @include flex-center;
+
+    i {
+      color: $orange;
+      font-size: 3rem;
+      margin: 1rem;
+    }
+  }
+
+}
