@@ -1,0 +1,14 @@
+$white: #F9F3E1;
+$orange: #F6A928;
+$green: #155147;
+$black: #000000;
+$grey: #767676;
+
+$primary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
