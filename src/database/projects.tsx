@@ -5,7 +5,7 @@ export const completedProjects = [
     image: "https://i.imgur.com/kZwhgMa.png",
     techStack: ["Node.js", "Express", "Sass", "React", "PostgreSQL"],
     repo: "https://github.com/muhammad-usama12/teebo",
-    demo: null
+    demo: ""
   },
   {
     name: "pikmeup",
@@ -13,7 +13,7 @@ export const completedProjects = [
     image: "https://i.imgur.com/XisKtLq.png",
     techStack: ["Node.js", "Express", "EJS", "Sass", "jQuery", "PostgreSQL"],
     repo: "https://github.com/nicohsfu/pikmiup",
-    demo: null
+    demo: ""
   },
   {
     name: "Interview Scheduler",
@@ -21,7 +21,7 @@ export const completedProjects = [
     image: "https://i.imgur.com/DEi4qx5.png",
     techStack: ["Node.js", "React", "Storybook", "Jest", "Cypress"],
     repo: "https://github.com/kaseyvee/scheduler",
-    demo: null
+    demo: ""
   },
   {
     name: "Jungle",
@@ -29,7 +29,7 @@ export const completedProjects = [
     image: "https://i.imgur.com/lvBpWha.png",
     techStack: ["Ruby", "Rails", "Cypress", "RSpec", "Stripe"],
     repo: "https://github.com/kaseyvee/jungle-rails",
-    demo: null
+    demo: ""
   }
 ];
 
@@ -40,7 +40,7 @@ export const inProgressProjects = [
     image: "https://github.com/kaseyvee/akmuo/raw/main/docs/landing-page.png?raw=true",
     techStack: ["React", "Sass"],
     repo: "https://github.com/kaseyvee/akmuo",
-    demo: null
+    demo: ""
   },
   {
     name: "me.brand()",
@@ -56,6 +56,6 @@ export const inProgressProjects = [
     image: "https://i.imgur.com/Q9vtP3E.png",
     techStack: ["Node.js", "Express", "React", "Sass", "PostgreSQL"],
     repo: "https://github.com/kaseyvee/crocodile-tiers",
-    demo: null
+    demo: ""
   }
 ];

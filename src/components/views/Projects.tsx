@@ -2,28 +2,24 @@ import { useState } from "react";
 import { completedProjects, inProgressProjects } from "../../database/projects";
 import { Badge } from "../Badge";
 
-function Projects() {
-  const [projectIndex, setProjectIndex] = useState(0);
+interface ProjectList {
+  name: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  repo: string;
+  demo: string;
+}
 
-  let currentProject = completedProjects[projectIndex]
+interface Props {
+  projectType: ProjectList[];
+  projectIndex: number;
+  handlePreviousProject: () => void;
+  handleNextProject: () => void;
+}
 
-  // const completedProjectsList = completedProjects.map((project) => {
-  //   return (
-
-  //   )
-  // })
-
-  function handlePreviousProject() {
-    if (completedProjects[projectIndex - 1]) {
-      return setProjectIndex(projectIndex - 1);
-    }
-  }
-
-  function handleNextProject() {
-    if (completedProjects[projectIndex + 1]) {
-      return setProjectIndex(projectIndex + 1);
-    }
-  }
+export const Projects: React.FC<Props> = (props) => {
+  let currentProject = props.projectType[props.projectIndex]
 
   const backgroundImage = {
     background: `linear-gradient(#000000b3, #000000b3
@@ -33,8 +29,8 @@ function Projects() {
   return (
     <div className="modal">
       <div className="nav-btns">
-        <i onClick={handlePreviousProject} className="fa-solid fa-circle-arrow-left"></i>
-        <i onClick={handleNextProject} className="fa-solid fa-circle-arrow-right"></i>
+        <i onClick={props.handlePreviousProject} className="fa-solid fa-circle-arrow-left"></i>
+        <i onClick={props.handleNextProject} className="fa-solid fa-circle-arrow-right"></i>
       </div>
       <div className="Projects" style={backgroundImage}>
         <div className="text">
@@ -44,7 +40,7 @@ function Projects() {
               <a href={currentProject.repo} target="_blank" rel="noreferrer noopener">github</a>
               {currentProject.demo &&
                 <>
-                  <p>|</p><a href={currentProject.demo}>demo</a>
+                  <p>|</p><a href={currentProject.demo} target="_blank" rel="noreferrer noopener">demo</a>
                 </>
               }
             </div>
@@ -53,12 +49,10 @@ function Projects() {
         </div>
         <div className="techstack">
           {currentProject.techStack.map(stack => {
-            return <Badge text={stack}/>
+            return <Badge key={currentProject.techStack.indexOf(stack)}text={stack}/>
           })}
         </div>
       </div>
     </div>
   );
 }
-
-export default Projects;
