@@ -68,6 +68,15 @@ h2, h3 {
   padding: 2rem
 }
 
+.badge {
+  background-color: $orange;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $white;
+}
+
 .About {
   @include flex-center;
   flex-direction: row;
@@ -93,6 +102,65 @@ h2, h3 {
     p {
       margin: 0;
       text-align: end;
+    }
+  }
+}
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    #000000b3, 
+    #000000b3
+  ), url("https://i.imgur.com/kZwhgMa.png");
+  background-position: center;
+  background-size: cover;
+
+  .text {
+    color: $white;
+    font-weight: bold;
+
+    h4, p {
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    .title {
+      font-family: $secondary-font;
+      margin: 2rem;
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+
+    .description {
+      font-size: 1.5rem;
+      margin: 2rem
+    }
+  }
+
+  .techstack {
+    @include flex-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem;
+
+    .badge {
+      opacity: 0.7;
+      transition-duration: 200ms;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
