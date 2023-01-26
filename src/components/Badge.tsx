@@ -1,8 +1,13 @@
 import React from 'react';
 
-export const Badge: React.FC<{ text: string }> = (props) => {
+interface Props {
+  text: string;
+  handleSendEmail?: () => void;
+}
+
+export const Badge: React.FC<Props> = (props) => {
   return (
-    <div className='badge'>
+    <div className='badge' onClick={props.handleSendEmail}>
       {props.text}
     </div>
   )

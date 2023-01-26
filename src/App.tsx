@@ -8,7 +8,7 @@ import { Projects } from './components/views/Projects';
 import { completedProjects, inProgressProjects } from './database/projects';
 
 function App() {
-  const [view, setView] = useState("about")
+  const [view, setView] = useState("contact")
   const [projectType, setProjectType] = useState(completedProjects)
   const [projectIndex, setProjectIndex] = useState(0);
 
