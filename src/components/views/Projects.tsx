@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { completedProjects, inProgressProjects } from "../../database/projects";
 import { Badge } from "../Badge";
 
 interface ProjectList {
