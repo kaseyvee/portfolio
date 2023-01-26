@@ -3,10 +3,12 @@ import './App.scss';
 import Header from './components/Header';
 import { Menu } from './components/Menu';
 import About from './components/views/About';
+import Contact from './components/views/Contact';
 import { Projects } from './components/views/Projects';
 import { completedProjects, inProgressProjects } from './database/projects';
 
 function App() {
+  const [view, setView] = useState("about")
   const [projectType, setProjectType] = useState(completedProjects)
   const [projectIndex, setProjectIndex] = useState(0);
 
@@ -18,6 +20,10 @@ function App() {
   function handleViewInProgress() {
       setProjectIndex(0);
       setProjectType(inProgressProjects);
+  }
+
+  function handleViewToggle(newView: string) {
+    setView(newView);
   }
 
   function handlePreviousProject() {
@@ -34,18 +40,22 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header handleViewToggle={handleViewToggle} />
       <Menu
         handleViewCompleted={handleViewCompleted}
         handleViewInProgress={handleViewInProgress}
+        handleViewToggle={handleViewToggle}
       />
-      {/* <About /> */}
-      <Projects
-        projectType={projectType}
-        projectIndex={projectIndex}
-        handlePreviousProject={handlePreviousProject}
-        handleNextProject={handleNextProject}
-      />
+      {view === "about" && <About />}
+      {view === "projects" &&
+        <Projects
+          projectType={projectType}
+          projectIndex={projectIndex}
+          handlePreviousProject={handlePreviousProject}
+          handleNextProject={handleNextProject}
+        />
+      }
+      {view === "contact" && <Contact />}
     </div>
   );
 }
