@@ -27,8 +27,7 @@ function Projects() {
 
   const backgroundImage = {
     background: `linear-gradient(#000000b3, #000000b3
-    ), url(${currentProject.image})`,
-    backgroundSize: "cover"
+    ), url(${currentProject.image})`
   }
 
   return (
@@ -42,7 +41,7 @@ function Projects() {
           <div className="title">
             <h4>{currentProject.name}</h4>
             <div className="links">
-              <a href={currentProject.repo}>github</a>
+              <a href={currentProject.repo} target="_blank" rel="noreferrer noopener">github</a>
               {currentProject.demo &&
                 <>
                   <p>|</p><a href={currentProject.demo}>demo</a>
@@ -53,11 +52,9 @@ function Projects() {
           <p className="description">{currentProject.description}</p>
         </div>
         <div className="techstack">
-          <Badge text="node.js"/>
-          <Badge text="express.js"/>
-          <Badge text="postgresql"/>
-          <Badge text="react.js"/>
-          <Badge text="sass.js"/>
+          {currentProject.techStack.map(stack => {
+            return <Badge text={stack}/>
+          })}
         </div>
       </div>
     </div>

@@ -71,7 +71,7 @@ h2, h3 {
 .badge {
   background-color: $orange;
   width: fit-content;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: $white;
@@ -134,6 +134,7 @@ h2, h3 {
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  background-size: cover !important;
 
   .text {
     color: $white;
@@ -173,9 +174,10 @@ h2, h3 {
 
   .techstack {
     @include flex-center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem;
+    gap: 1rem;
+    margin: 0 2rem 2rem 2rem;
 
     .badge {
       opacity: 0.7;
