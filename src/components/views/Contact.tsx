@@ -13,7 +13,6 @@ const Contact: React.FC<{ loading: boolean }> = (props) => {
 
   return (
     <div className="modal">
-      {/* {props.loading && <div className="curtain"></div>} */}
       <div className="Contact">
         {!emailSent &&
           <>

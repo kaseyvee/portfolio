@@ -1,7 +1,6 @@
 const About: React.FC<{ loading: boolean }> = (props) => {
   return (
     <div className="modal">
-      {/* {props.loading && <div className="curtain"></div>} */}
       <div className="About">
         <img
           className="photo"

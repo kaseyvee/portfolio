@@ -9,10 +9,10 @@ import { Projects } from './components/views/Projects';
 import { completedProjects, inProgressProjects } from './database/projects';
 
 function App() {
-  const [view, setView] = useState("about")
-  const [projectType, setProjectType] = useState(completedProjects)
+  const [view, setView] = useState("about");
+  const [projectType, setProjectType] = useState(completedProjects);
   const [projectIndex, setProjectIndex] = useState(0);
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   function endLoading() {
     setTimeout(() => {

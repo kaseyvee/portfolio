@@ -218,6 +218,10 @@ h2, h3 {
     &:hover {
       opacity: 1;
     }
+
+    &:active {
+      color: aqua;
+    }
   }
 }
 
