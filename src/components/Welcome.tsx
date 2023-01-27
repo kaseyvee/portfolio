@@ -6,7 +6,7 @@ function Welcome() {
   useEffect(() => {
     setTimeout(() => {
       setWelcome(false);
-    }, 400);
+    }, 200);
   }, [])
 
   return (
