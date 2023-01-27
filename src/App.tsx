@@ -6,6 +6,7 @@ import { Menu } from './components/Menu';
 import About from './components/views/About';
 import Contact from './components/views/Contact';
 import { Projects } from './components/views/Projects';
+import Welcome from './components/Welcome';
 import { completedProjects, inProgressProjects } from './database/projects';
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
         handleViewInProgress={handleViewInProgress}
         handleViewToggle={handleViewToggle}
       />
+      <Welcome />
       {loading && <div className='curtain'></div>}
       {view === "about" && <About loading={loading}/>}
       {view === "projects" &&
