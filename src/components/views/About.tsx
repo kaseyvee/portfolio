@@ -3,7 +3,6 @@ const About: React.FC<{ loading: boolean }> = (props) => {
     <div className="modal">
       <div className="About">
         <img
-          className="photo"
           src="https://avatars.githubusercontent.com/u/111031789?v=4"     
           alt="me"
         />

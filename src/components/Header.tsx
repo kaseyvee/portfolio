@@ -48,6 +48,7 @@ export const Header: React.FC<{ handleViewToggle: (newView: string) => void }> =
           </i>
         </div>
       </div>
+      <a href="https://www.youtube.com/watch?v=r3-Y31ONZuI&ab_channel=nathanfielder">special portal</a>
     </div>
   );
 }

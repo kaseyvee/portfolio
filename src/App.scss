@@ -39,7 +39,12 @@ h2, h3 {
       margin: 1rem;
       cursor: pointer;
     }
-  } 
+  }
+  
+  a {
+    cursor: pointer;
+    align-self: center;
+  }
 }
 
 .Menu {
@@ -177,10 +182,17 @@ h2, h3 {
   height: 100%;
   width: 100%;
 
-  .photo {
+  img {
     object-fit: cover;
     width: 50%;
     height: 100%;
+    overflow: hidden;
+    transition-duration: 200ms;
+
+    &:hover {
+      object-position: left bottom;
+      width: 70%;
+    }
   }
 
   .bio {
@@ -196,31 +208,6 @@ h2, h3 {
     p {
       margin: 0;
       text-align: end;
-    }
-  }
-}
-
-.nav-btns {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: $orange;
-  font-size: 2rem;
-  width: calc(100% - 4rem);
-  height: 100%;
-  
-  i {
-    opacity: 0.7;
-    transition-duration: 200ms;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      color: aqua;
     }
   }
 }
@@ -281,10 +268,37 @@ h2, h3 {
     .badge {
       opacity: 0.7;
       transition-duration: 200ms;
+      z-index: 0;
 
       &:hover {
         opacity: 1;
       }
+    }
+  }
+}
+
+.nav-btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $orange;
+  font-size: 2rem;
+  width: calc(100% - 4rem);
+  height: 100%;
+  
+  i {
+    opacity: 0.7;
+    transition-duration: 200ms;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      font-size: 2.5rem;
+    }
+
+    &:active {
+      font-size: 2rem;
     }
   }
 }
