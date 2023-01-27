@@ -8,16 +8,16 @@ export const Header: React.FC<{ handleViewToggle: (newView: string) => void }> =
     setIconBounce("fa-bounce");
     setTimeout(() => {
       setIconFocus("github");
-    }, 200);
+    }, 400);
     setTimeout(() => {
       setIconFocus("linkedin");
-    }, 700);
+    }, 900);
     setTimeout(() => {
       setIconFocus("email");
-    }, 1200);
+    }, 1400);
     setTimeout(() => {
       setIconFocus("");
-    }, 1700);
+    }, 2000);
   }, [])
 
   function handleHoverMouseEnter(icon: string) {

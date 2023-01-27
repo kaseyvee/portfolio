@@ -34,7 +34,7 @@ h2, h3 {
       width: 100%;
       height: 7rem;
       background-color: $white;
-      animation: show 1000ms ease-in-out forwards;
+      animation: show 1400ms ease-in-out forwards;
 
       @keyframes show {
         100% {
@@ -56,7 +56,7 @@ h2, h3 {
       width: 100%;
       height: 2rem;
       background-color: $orange;
-      animation: show 900ms ease-in-out forwards;
+      animation: show 1300ms ease-in-out forwards;
 
       @keyframes show {
         100% {
@@ -98,7 +98,7 @@ h2, h3 {
     height: 100%;
     background-color: $orange;
     z-index: 1;
-    animation: show 600ms ease-in-out forwards;
+    animation: show 900ms ease-in-out forwards;
   }
 
   .underline::before {
@@ -179,7 +179,7 @@ h2, h3 {
   height: 100vh;
   width: 100vw;
   z-index: 3;
-  animation: slide-up 600ms ease-in forwards;
+  animation: slide-up 800ms ease-in forwards;
   overflow: hidden;
 
   @keyframes slide-up {
@@ -222,7 +222,7 @@ h2, h3 {
   width: 50%;
   height: 50%;
   z-index: 2;
-  animation: curtain 750ms ease-in infinite forwards;
+  animation: curtain 750ms ease-out forwards;
 
   @keyframes curtain {
     0% {
