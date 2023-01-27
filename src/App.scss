@@ -21,13 +21,49 @@ h2, h3 {
   cursor: default;
 
   h1 {
+    position: relative;
     color: $white;
     font-size: 6rem;
     margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 7rem;
+      background-color: $white;
+      animation: show 1000ms ease-in-out forwards;
+
+      @keyframes show {
+        100% {
+          width: 0%;
+        }
+      }
+    }
   }
   
   h2 {
+    position: relative;
     color: $orange;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2rem;
+      background-color: $orange;
+      animation: show 900ms ease-in-out forwards;
+
+      @keyframes show {
+        100% {
+          width: 0%;
+        }
+      }
+    }
   }
 
   .links {
@@ -44,6 +80,7 @@ h2, h3 {
   a {
     cursor: pointer;
     align-self: center;
+    color: $black;
   }
 }
 
@@ -313,6 +350,15 @@ h2, h3 {
     margin-bottom: 1rem;
     font-weight: bold;
     letter-spacing: normal;
+    
+    a {
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   form {

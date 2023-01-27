@@ -16,7 +16,7 @@ const Contact: React.FC<{ loading: boolean }> = (props) => {
       <div className="Contact">
         {!emailSent &&
           <>
-          <h2>coffee chat?</h2>
+          <h2>coffee chat? - <a href="mailto:kaseyvaldez98@gmail.com?subject=Hello Cool Person!">kaseyvaldez98@gmail.com</a></h2>
           <form>
             <input placeholder="name"/>
             <input placeholder="email"/>

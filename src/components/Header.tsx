@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Header: React.FC<{ handleViewToggle: (newView: string) => void }> = (props) => {
   const [iconFocus, setIconFocus] = useState("");
   const [iconBounce, setIconBounce] = useState("");
+
+  useEffect(() => {
+    setIconBounce("fa-bounce");
+    setIconFocus("github");
+    setTimeout(() => {
+      setIconFocus("linkedin");
+    }, 800);
+    setTimeout(() => {
+      setIconFocus("email");
+    }, 1600);
+    setTimeout(() => {
+      setIconFocus("");
+    }, 2400);
+  }, [])
 
   function handleHoverMouseEnter(icon: string) {
     setIconFocus(icon);
