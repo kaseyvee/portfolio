@@ -12,7 +12,7 @@ function Welcome() {
   return (
     <div className='Welcome'>
       <i className={`fa-solid fa-hand-peace ${welcome && "fa-shake"}`}></i>
-      <h1>hi there!</h1>
+      <h1>why hello</h1>
     </div>
   );
 }
