@@ -43,6 +43,7 @@ function App() {
       <Header handleViewToggle={handleViewToggle} />
       <Menu
         view={view}
+        projectType={projectType}
         handleViewCompleted={handleViewCompleted}
         handleViewInProgress={handleViewInProgress}
         handleViewToggle={handleViewToggle}

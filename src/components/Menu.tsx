@@ -1,5 +1,17 @@
+import { completedProjects, inProgressProjects } from '../database/projects';
+
+interface ProjectList {
+  name: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  repo: string;
+  demo: string;
+}
+
 interface Props {
   view: string;
+  projectType: ProjectList[];
   handleViewCompleted: () => void;
   handleViewInProgress: () => void;
   handleViewToggle: (newView: string) => void;
@@ -24,11 +36,11 @@ export const Menu: React.FC<Props> = (props) => {
             <>
               <h3
                 onClick={props.handleViewCompleted}
-                // className={`${props.view === "co" && "underline"}`}
+                className={`${props.projectType === completedProjects && "highlight"}`}
               >completed</h3>
               <h3
                 onClick={props.handleViewInProgress}
-                // className={`${props.view === "about" && "underline"}`}
+                className={`${props.projectType === inProgressProjects && "highlight"}`}
               >in progress</h3>
             </>
           }
