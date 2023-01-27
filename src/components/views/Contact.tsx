@@ -30,19 +30,21 @@ const Contact: React.FC<{ loading: boolean }> = (props) => {
   const body = useRef<HTMLTextAreaElement>(null);
 
   function handleSendEmail() {
-    Email.send({
-      SecureToken: '9e2fbd57-5019-4d89-89dd-0590821ca8cd',
-      To: 'kaseyvaldez98@gmail.com',
-      From: `kaseyvaldez98@gmail.com`,
-      Subject: `${subject.current && subject.current.value}`,
-      Body: `Message received from ${email.current && email.current.value}: ${body.current && body.current.value}`
-  }).then((data) => {
-    console.log(data)
-    setEmailSent(true);
-    setTimeout(() => {
-      setEmailSent(false);
-    }, 3000);
-  });
+    if (email.current?.value && subject.current?.value && body.current?.value) {
+      Email.send({
+        SecureToken: '9e2fbd57-5019-4d89-89dd-0590821ca8cd',
+        To: 'kaseyvaldez98@gmail.com',
+        From: `kaseyvaldez98@gmail.com`,
+        Subject: `${subject.current && subject.current.value}`,
+        Body: `Message received from ${email.current && email.current.value}: ${body.current && body.current.value}`
+    }).then((data) => {
+      console.log(data)
+      setEmailSent(true);
+      setTimeout(() => {
+        setEmailSent(false);
+      }, 3000);
+    });
+    }
   }
 
   return (
