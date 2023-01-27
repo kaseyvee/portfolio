@@ -128,7 +128,37 @@ h2, h3 {
   width: 50%;
   height: 50%;
   box-shadow: 1rem 1rem $orange;
-  padding: 2rem
+  padding: 2rem;
+}
+
+.curtain {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: $green;
+  padding: 2rem;
+  width: 50%;
+  height: 50%;
+  z-index: 2;
+  animation: curtain 750ms ease-in infinite forwards;
+
+  @keyframes curtain {
+    0% {
+      width: 0%;
+    }
+
+    25% {
+      width: 50%;
+    }
+
+    75% {
+      width: 50%;
+    }
+
+    100% {
+      width: 0%;
+    }
+  }
 }
 
 .badge {

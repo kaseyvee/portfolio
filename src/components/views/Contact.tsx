@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Badge } from "../Badge";
 
-function Contact() {
+const Contact: React.FC<{ loading: boolean }> = (props) => {
   const [emailSent, setEmailSent] = useState(false);
 
   function handleSendEmail() {
@@ -13,6 +13,7 @@ function Contact() {
 
   return (
     <div className="modal">
+      {/* {props.loading && <div className="curtain"></div>} */}
       <div className="Contact">
         {!emailSent &&
           <>

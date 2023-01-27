@@ -10,6 +10,7 @@ interface ProjectList {
 }
 
 interface Props {
+  loading: boolean;
   projectType: ProjectList[];
   projectIndex: number;
   handlePreviousProject: () => void;
@@ -26,6 +27,7 @@ export const Projects: React.FC<Props> = (props) => {
 
   return (
     <div className="modal">
+      {/* {props.loading && <div className="curtain"></div>} */}
       <div className="nav-btns">
         <i onClick={props.handlePreviousProject} className="fa-solid fa-circle-arrow-left"></i>
         <i onClick={props.handleNextProject} className="fa-solid fa-circle-arrow-right"></i>
