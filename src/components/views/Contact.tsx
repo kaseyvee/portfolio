@@ -8,7 +8,7 @@ function Contact() {
     setEmailSent(true);
     setTimeout(() => {
       setEmailSent(false);
-    }, 4000);
+    }, 3000);
   }
 
   return (
@@ -24,6 +24,7 @@ function Contact() {
           </form>
           <Badge text="send" handleSendEmail={handleSendEmail}/>
         </>}
+        {emailSent && <div className="thanks">thanks for your message :)</div>}
       </div>
     </div>
   );

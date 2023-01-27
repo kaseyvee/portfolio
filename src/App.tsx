@@ -42,6 +42,7 @@ function App() {
     <div className="App">
       <Header handleViewToggle={handleViewToggle} />
       <Menu
+        view={view}
         handleViewCompleted={handleViewCompleted}
         handleViewInProgress={handleViewInProgress}
         handleViewToggle={handleViewToggle}
