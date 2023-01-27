@@ -63,7 +63,7 @@ function App() {
       setLoading(true);
       setTimeout(() => {
         setProjectIndex(projectIndex - 1);
-      }, 500);
+      }, 226);
       endLoading();
     }
   }
@@ -73,7 +73,7 @@ function App() {
       setLoading(true);
       setTimeout(() => {
         setProjectIndex(projectIndex + 1);
-      }, 500);
+      }, 226);
       endLoading();
     }
   }
