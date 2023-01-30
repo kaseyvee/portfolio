@@ -7,3 +7,13 @@ body {
   background-color: $black;
   font-family: $primary-font;
 }
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+  }
+  
+  #root {
+    height: 100%;
+  }
+}
