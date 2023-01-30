@@ -1,5 +1,5 @@
 import { NONAME } from 'dns';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { completedProjects, inProgressProjects } from '../database/projects';
 
 interface ProjectList {
@@ -21,6 +21,17 @@ interface Props {
 
 export const Menu: React.FC<Props> = (props) => {
   const [burger, setBurger] = useState(false);
+  const clickRef = useRef<any>(null);
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideMenuClick, true);
+  }, [])
+
+  function handleOutsideMenuClick(e: any) {
+    if (!clickRef.current.contains(e.target)) {
+      setBurger(false);
+    }
+  }
 
   function handleToggleBurger() {
     if (burger) {
@@ -34,7 +45,7 @@ export const Menu: React.FC<Props> = (props) => {
   }
   
   return (
-    <div className="Menu">
+    <div className="Menu" ref={clickRef}>
       <i className="fa-solid fa-burger" onClick={handleToggleBurger}></i>
       <div className="menu-items" style={burger ? burgerToggleStyle : {}}>
         <h2
