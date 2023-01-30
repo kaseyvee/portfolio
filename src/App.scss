@@ -500,6 +500,7 @@ h2, h3 {
     opacity: 60%;
     bottom: 2rem;
     left: 2rem;
+    transition-duration: 200ms;
 
     &:hover {
       opacity: 100%;
@@ -510,7 +511,7 @@ h2, h3 {
     position: fixed;
     bottom: 6rem;
     left: 1rem;
-    background-color: $orange;
+    background-color: rgba(23, 27, 33, 0.7);
 
     .menu-items {
       display: none;
@@ -541,6 +542,7 @@ h2, h3 {
       object-fit: cover;
       width: 50%;
       height: auto;
+      border: solid 3px $white;
       border-radius: 50%;
       object-position: bottom;
       margin: 2rem;
@@ -579,6 +581,6 @@ h2, h3 {
   }
 
   .curtain {
-    display: none;
+    // display: none;
   }
 }
