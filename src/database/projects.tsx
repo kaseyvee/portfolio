@@ -8,6 +8,14 @@ export const completedProjects = [
     demo: ""
   },
   {
+    name: "me.brand()",
+    description: "A fully front-end template generator for providing users a medium to introduce themselves with an eye-catching photo/banner using recognizable and iconic designs.",
+    image: "https://i.imgur.com/PUEelKh.png",
+    techStack: ["React", "Sass"],
+    repo: "https://github.com/kaseyvee/me-brand",
+    demo: "https://kaseyvee.github.io/me-brand/"
+  },
+  {
     name: "pikmeup",
     description: "A food order pick-up application that allows customers to receive SMS updates regarding the status of their order.",
     image: "https://i.imgur.com/XisKtLq.png",
@@ -49,14 +57,6 @@ export const inProgressProjects = [
     techStack: ["React", "Sass"],
     repo: "https://github.com/kaseyvee/akmuo",
     demo: ""
-  },
-  {
-    name: "me.brand()",
-    description: "A fully front-end template generator for providing users a medium to introduce themselves with an eye-catching photo/banner using recognizable and iconic designs.",
-    image: "https://i.imgur.com/PUEelKh.png",
-    techStack: ["React", "Sass"],
-    repo: "https://github.com/kaseyvee/me-brand",
-    demo: "https://kaseyvee.github.io/me-brand/"
   },
   {
     name: "Crocodile Tiers",
