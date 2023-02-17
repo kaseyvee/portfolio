@@ -35,6 +35,14 @@ export const completedProjects = [
 
 export const inProgressProjects = [
   {
+    name: "untitled yum yum app",
+    description: "An app for sharing your personal restaurant and menu item favourites for your peers.",
+    image: "https://i.imgur.com/7fP0gRU.png",
+    techStack: ["Next.js", "Sass", "Pocketbase"],
+    repo: "https://github.com/kaseyvee/my-restaurant-list",
+    demo: ""
+  },
+  {
     name: "AKMUO",
     description: "A front-end e-commerce application for Vancouver-based AKMUO Jewelry.",
     image: "https://i.imgur.com/Zuw9Ydb.png",

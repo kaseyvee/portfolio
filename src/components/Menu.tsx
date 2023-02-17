@@ -1,4 +1,3 @@
-import { NONAME } from 'dns';
 import { useEffect, useRef, useState } from 'react';
 import { completedProjects, inProgressProjects } from '../database/projects';
 
