@@ -8,6 +8,14 @@ export const completedProjects = [
     demo: ""
   },
   {
+    name: "untitled yum yum app",
+    description: "An app for sharing your personal restaurant and menu item favourites for your peers.",
+    image: "https://i.imgur.com/7fP0gRU.png",
+    techStack: ["Next.js", "Sass", "Pocketbase"],
+    repo: "https://github.com/kaseyvee/my-restaurant-list",
+    demo: "https://untitled-yum-yum-app.vercel.app/"
+  },
+  {
     name: "me.brand()",
     description: "A fully front-end template generator for providing users a medium to introduce themselves with an eye-catching photo/banner using recognizable and iconic designs.",
     image: "https://i.imgur.com/PUEelKh.png",
@@ -42,14 +50,6 @@ export const completedProjects = [
 ];
 
 export const inProgressProjects = [
-  {
-    name: "untitled yum yum app",
-    description: "An app for sharing your personal restaurant and menu item favourites for your peers.",
-    image: "https://i.imgur.com/7fP0gRU.png",
-    techStack: ["Next.js", "Sass", "Pocketbase"],
-    repo: "https://github.com/kaseyvee/my-restaurant-list",
-    demo: ""
-  },
   {
     name: "AKMUO",
     description: "A front-end e-commerce application for Vancouver-based AKMUO Jewelry.",
