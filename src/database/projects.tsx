@@ -1,5 +1,13 @@
 export const completedProjects = [
   {
+    name: "Frontend Mentor Challenges",
+    description: "A list of all my completed and in-progress Frontend Mentor challenges. See repo for links to demos, repos, and the original challenges.",
+    image: "https://i.imgur.com/68HW7mL.png",
+    techStack: ["Node.js", "Sass", "React"],
+    repo: "https://github.com/kaseyvee/frontend-mentor-challenges",
+    demo: ""
+  },
+  {
     name: "teebo",
     description: "A discourse app that caters to passionate tv fans who want to have active discussions about their favourite shows.",
     image: "https://i.imgur.com/kZwhgMa.png",
