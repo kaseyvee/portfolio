@@ -1,11 +1,19 @@
 export const completedProjects = [
   {
-    name: "Frontend Mentor Challenges",
-    description: "A list of all my completed and in-progress Frontend Mentor challenges. See repo for links to demos, repos, and the original challenges.",
-    image: "https://i.imgur.com/68HW7mL.png",
-    techStack: ["Node.js", "Sass", "React"],
-    repo: "https://github.com/kaseyvee/frontend-mentor-challenges",
-    demo: ""
+    name: "Photosnap",
+    description: "A multipage marketing website for a photo sharing app. Built with a mobile-first workflow and web accessibility in mind.",
+    image: "https://i.imgur.com/EpTegDF.png",
+    techStack: ["React", "Sass", "Framer Motion"],
+    repo: "https://github.com/kaseyvee/photosnap",
+    demo: "https://kaseyvee.github.io/photosnap/"
+  },
+  {
+    name: "Clock App",
+    description: "A simple clock app built with multiple APIs to gather time, location, and quote data. Built with a mobile-first workflow to ensure the beautiful design is maintained on various devices.",
+    image: "https://i.imgur.com/qEdkhND.png",
+    techStack: ["Axios", "React", "Sass", "Framer Motion"],
+    repo: "https://github.com/kaseyvee/clock-app",
+    demo: "https://kaseyvee.github.io/clock-app/"
   },
   {
     name: "teebo",
@@ -32,46 +40,30 @@ export const completedProjects = [
     demo: "https://kaseyvee.github.io/me-brand/"
   },
   {
-    name: "pikmeup",
-    description: "A food order pick-up application that allows customers to receive SMS updates regarding the status of their order.",
-    image: "https://i.imgur.com/XisKtLq.png",
-    techStack: ["Node.js", "Express", "EJS", "Sass", "jQuery", "PostgreSQL"],
-    repo: "https://github.com/nicohsfu/pikmiup",
-    demo: ""
-  },
-  {
-    name: "Interview Scheduler",
-    description: "A single page application that allows users to book interviews with available interviewers.",
-    image: "https://i.imgur.com/DEi4qx5.png",
-    techStack: ["Node.js", "React", "Storybook", "Jest", "Cypress"],
-    repo: "https://github.com/kaseyvee/scheduler",
-    demo: ""
-  },
-  {
-    name: "Jungle",
-    description: "A mini plant-centric e-commerce application that allows users to pay through Stripe.",
-    image: "https://i.imgur.com/lvBpWha.png",
-    techStack: ["Ruby", "Rails", "Cypress", "RSpec", "Stripe"],
-    repo: "https://github.com/kaseyvee/jungle-rails",
-    demo: ""
+    name: "Manage Landing Page",
+    description: "This landing page was built with a mobile-first workflow and web accessibility in mind. Web accessibility was a key consideration in the development process, making sure the landing page is inclusive and can be accessed by everyone.",
+    image: "https://i.imgur.com/ap1fyaE.png",
+    techStack: ["React", "Sass", "Framer Motion"],
+    repo: "https://github.com/kaseyvee/manage-landing",
+    demo: "https://kaseyvee.github.io/manage-landing/"
   }
 ];
 
 export const inProgressProjects = [
+  {
+    name: "District Eleven Restaurant",
+    description: "A full-stack marketing and menu website for local Vancouver restaurant, District Eleven.",
+    image: "https://i.imgur.com/ofUm6R0.png",
+    techStack: ["Node.js", "React", "Sass", "Contentful"],
+    repo: "https://github.com/wagabooga/D11",
+    demo: ""
+  },
   {
     name: "AKMUO",
     description: "A front-end e-commerce application for Vancouver-based AKMUO Jewelry.",
     image: "https://i.imgur.com/Zuw9Ydb.png",
     techStack: ["React", "Sass"],
     repo: "https://github.com/kaseyvee/akmuo",
-    demo: ""
-  },
-  {
-    name: "Crocodile Tiers",
-    description: "A full-stack web application for users to create and share tier lists.",
-    image: "https://i.imgur.com/Q9vtP3E.png",
-    techStack: ["Node.js", "Express", "React", "Sass", "PostgreSQL"],
-    repo: "https://github.com/kaseyvee/crocodile-tiers",
     demo: ""
   }
 ];
